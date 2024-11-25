@@ -42,7 +42,7 @@
 
 - O servidor será executado em `http://localhost:4502`. Só abrir qualquer browser e digitar que será aberta a página inicial do API.
 
-Você pode testar com o endpoint público: `https://insprak-delivery-api-0729615f05f3.herokuapp.com/users` (método GET).
+Você pode testar com o endpoint público: `https://insprak-delivery-api-3-388c3302da22.herokuapp.com//users` (método GET).
 
 ## Manipulando os dados
 Com o Postment ou qualquer ferramenta de gestão de comunicação você pode alterar os dados de API, ou criar novas informações.
