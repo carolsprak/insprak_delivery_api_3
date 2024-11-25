@@ -1,0 +1,89 @@
+{
+  "users": [    
+    {
+      "firstName": "Anne",
+      "lastName": "Caroline",
+      "username": "annerocha_qa",
+      "password": "123456",
+      "email": "anne@mail.com",
+      "cpfCnpj": "31.041.364/0001-43",
+      "birthDate": "2000-10-10",
+      "profiles": [
+        "Cliente",
+        "Prestador"
+      ],
+      "addresses[0]": {
+        "street": "Rua da lua",
+        "number": "10",
+        "complement": "AP 100",
+        "city": "Catarina",
+        "state": "AM",
+        "zipCode": "48775-554"
+      },
+      "id": 1
+    }
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Restaurante A",
+      "description": "Comida deliciosa",
+      "address": {
+        "street": "Avenida Principal",
+        "number": "456",
+        "city": "São Paulo",
+        "state": "SP",
+        "zipCode": "01234-567"
+      },
+      "providerId": 2,
+      "products": [
+        {
+          "id": 1,
+          "name": "Pizza Margherita",
+          "category": "Pizza",
+          "description": "Pizza com molho de tomate, mussarela e manjericão",
+          "photo": "url_da_foto",
+          "availableQuantity": 10,
+          "price": 30,
+          "averageStars": 4.5
+        }
+      ]
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "providerId": 2,
+      "clientId": 1,
+      "deliveryPersonId": 3,
+      "totalPayment": 40,
+      "status": "aguardando",
+      "deliveryFee": 10,
+      "orderTime": "2024-07-14T12:00:00Z",
+      "deliveryTime": null,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1,
+          "price": 30
+        }
+      ],
+      "rating": null
+    }
+  ],
+  "carts": [
+    {
+      "clientId": 1,
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 2,
+          "price": 30
+        }
+      ],
+      "totalItems": 2,
+      "totalPrice": 60,
+      "deliveryFee": 10
+    }
+  ]
+}
