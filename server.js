@@ -3,9 +3,11 @@ const server = jsonServer.create()
 const router = jsonServer.router('./database/db.json')
 const middlewares = jsonServer.defaults()
 const bodyParser = require('body-parser')
+const cors = require('cors'); // Importa o CORS para habilitar
 
 const PORT = process.env.PORT || 4502
 
+server.use(cors());
 server.use(middlewares)
 server.use(bodyParser.json())
 
