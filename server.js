@@ -7,7 +7,11 @@ const cors = require('cors'); // Importa o CORS para habilitar
 
 const PORT = process.env.PORT || 4502
 
-server.use(cors());
+server.use(cors({
+  origin: 'https://carolsprak.github.io', // Domínio do frontend
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
+  allowedHeaders: ['Content-Type', 'Authorization'], // Cabeçalhos permitidos
+}));
 server.use(middlewares)
 server.use(bodyParser.json())
 
