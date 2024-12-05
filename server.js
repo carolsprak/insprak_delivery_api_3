@@ -7,11 +7,7 @@ const cors = require('cors'); // Importa o CORS para habilitar
 
 const PORT = process.env.PORT || 4502
 
-server.use(cors({
-  origin: 'https://www.insprak.com.br/insprak_delivery_3', // Domínio do frontend
-  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
-  allowedHeaders: ['Content-Type', 'Authorization'], // Cabeçalhos permitidos
-}));
+server.use(cors());
 server.use(middlewares)
 server.use(bodyParser.json())
 
